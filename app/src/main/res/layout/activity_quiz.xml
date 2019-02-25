@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:background="@color/ColorBackground">
+    <TextView
+        android:id="@+id/textview_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_0"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:freezesText="true"
+
+        />
+    <TextView
+        android:id="@+id/textview_questioncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="Question 1:X"
+        android:layout_below="@+id/textview_score"
+        android:freezesText="true"
+
+        />
+
+    <TextView
+        android:id="@+id/textview_deficalty"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textview_questioncount"
+        android:freezesText="true"
+        android:text=" Deficlty:"
+        android:textColor="@android:color/black"
+
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textview_category"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="98dp"
+        android:freezesText="true"
+
+        android:text=" Category:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textview_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:text="00:30"
+        android:layout_alignParentEnd="true"
+        android:freezesText="true"
+
+        />
+    <TextView
+        android:id="@+id/textview_qution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is the quetion text \n this is the quetion text\n this is the quetion text"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_above="@+id/radio_group"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+        android:freezesText="true"
+
+
+
+        />
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:freezesText="true"
+
+        >
+        <RadioButton
+            android:id="@+id/radio_btn_1"
+            android:text="Option 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+
+
+            />
+        <RadioButton
+            android:id="@+id/radio_btn_2"
+            android:text="Option 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+
+
+            />
+        <RadioButton
+            android:id="@+id/radio_btn_3"
+            android:text="Option 3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+
+
+            />
+
+
+
+
+    </RadioGroup>
+
+<Button
+    android:id="@+id/confirm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Confirm"
+    android:layout_below="@+id/radio_group"
+    android:layout_centerHorizontal="true"
+    android:textColor="@android:color/black"
+    android:freezesText="true"
+
+
+    />
+
+
+</RelativeLayout>
